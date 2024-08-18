@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun's Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+        body, h1, h2, h3, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Merriweather', Georgia, serif;
+            line-height: 1.6;
+            background-color: #fff3e0; 
+            color: #5a2a27; 
+        }
+
+        header {
+            background: linear-gradient(135deg, #8b0000, #ff4500); /* Rich reds and oranges */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Merriweather', Georgia, serif;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        header nav ul {
+            list-style-type: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #ffd700; 
+            text-decoration: none;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+     
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+       
+        main {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        main article {
+            background-color: #fffaf0; 
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #d2691e; 
+        }
+
+        main article img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        main article .meta {
+            color: #777;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        main article .read-more {
+            background: linear-gradient(135deg, #8b0000, #ff4500);
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            transition: background 0.3s ease;
+        }
+
+        main article .read-more:hover {
+            background: linear-gradient(135deg, #ff4500, #ff6347);
+        }
+
+        aside {
+            flex: 1;
+        }
+
+        aside section {
+            background-color: #fffaf0;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #d2691e;
+        }
+
+        aside section h3 {
+            margin-bottom: 15px;
+        }
+
+        aside section ul {
+            list-style-type: none;
+        }
+
+        aside section ul li {
+            margin-bottom: 10px;
+        }
+
+        aside section ul li a {
+            color: #5a2a27;
+            text-decoration: none;
+        }
+
+        aside section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #8b0000, #ff4500);
+            color: #ffd700;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer .social-media a {
+            color: #ffd700;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer .social-media a:hover {
+            text-decoration: underline;
+        }
+
+     
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 0 20px;
+            }
+
+            main {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Varun's Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <article>
+                <h2>Yummy! Yummy Biryani</h2>
+                <p class="meta">by <strong>Varun</strong> on August 15, 2023</p>
+                <img src="biryani.png" alt="Blog image">
+                <p>Biryani is a highly popular and flavorful dish originating from the Indian subcontinent. 
+                    It is a mixed rice dish made with a variety of spices, basmati rice, and usually some form of meat
+                    (like chicken, mutton, beef, or fish), though there are also vegetarian versions that use vegetables or paneer
+                    (Indian cottage cheese). Biryani is a dish deeply embedded in the culinary traditions of South Asia, especially in India, 
+                    Pakistan, and Bangladesh. It is often served at celebrations, weddings, and festivals and is considered a dish that brings people together.
+                    The preparation of biryani can vary greatly by region, with each area having its unique twist on the classic recipe.</p>
+                <button class="read-more">Read More</button>
+            </article>
+        </main>
+
+        <aside>
+            <section>
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="https://www.indianhealthyrecipes.com/chicken-biryani-recipe/">chicken-biryani-recipe</a></li>
+                    <li><a href="https://www.indianhealthyrecipes.com/prawn-biryani-recipe-prawn-recipes/">Prawns Biryani</a></li>
+                    <li><a href="https://www.culturalindia.net/indian-food/mughlai.html">Mughalai's Biryani</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Types-pulaws</h3>
+                <ul>
+                    <li><a href="https://hungryforever.net/top-10-non-veg-biryani-recipes-india/">Non-veg Biryani</a></li>
+                    <li><a href="https://www.indianhealthyrecipes.com/veg-biryani/">Veg Biryani</a></li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy;  Varun's Blog. All rights reserved by Varun</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://x.com/home">Twitter</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
